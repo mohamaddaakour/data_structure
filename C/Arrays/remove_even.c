@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int countOdd(int *arr, int size) {
+int count_odd(int *arr, int size) {
     int count = 0;
 
     for (int i = 0; i < size; i++) {
@@ -12,11 +12,12 @@ int countOdd(int *arr, int size) {
     return count;
 }
 
-int *removeEven(int *arr, int size) {
+int *remove_even(int *arr, int size) {
 
-    int newSize = countOdd(arr, size);
+    int newSize = count_odd(arr, size);
 
-    int *result = (int *)malloc(sizeof(int) * newSize);
+    int *result = malloc(sizeof(int) * newSize);
+
     if (!result) {
         return NULL;
     }
@@ -33,11 +34,11 @@ int *removeEven(int *arr, int size) {
 }
 
 int main() {
-    int arr[] = {1 , 2, 3, 4};
+    int arr[] = {1, 2, 3, 4};
     int size = sizeof(arr) / sizeof(arr[0]);
-    int newSize = countOdd(arr, size);
+    int newSize = count_odd(arr, size);
 
-    int *result = removeEven(arr, size);
+    int *result = remove_even(arr, size);
 
     for (int i = 0; i < newSize; i++) {
         printf("%d ", result[i]);

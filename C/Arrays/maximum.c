@@ -17,5 +17,6 @@ int main() {
 
     int result = maximum(arr, size);
     printf("%d", result);
+    
     return 0;
 }

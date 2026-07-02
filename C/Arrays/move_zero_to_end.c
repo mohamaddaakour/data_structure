@@ -1,8 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int *moveZeroEnd(int *arr, int size) {
-    int *newArray = (int *)malloc(sizeof(int) * size);
+int *move_zero_to_end(int *arr, int size) {
+    // we allocated a memory for this array
+    int *newArray = malloc(sizeof(int) * size);
+
+    // if the allocation failed return NULL
     if (!newArray) {
         return NULL;
     }
@@ -27,7 +30,7 @@ int main() {
     int arr[] = {0, 1, 3, 0, 5};
     int size = 5;
 
-    int *result = moveZeroEnd(arr, size);
+    int *result = move_zero_to_end(arr, size);
 
     for (int i = 0; i < size; i++) {
         printf("%d ", result[i]);

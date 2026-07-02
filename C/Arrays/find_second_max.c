@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <limits.h>
 
-int findSecondMax(int *arr, int size) {
+int find_second_max(int *arr, int size) {
     if (size < 2)
         return -1;
 
@@ -29,9 +29,10 @@ int findSecondMax(int *arr, int size) {
 }
 
 int main() {
-    int arr[] = {-1, -1 , -1};
+    int arr[] = {-1, 1 , 10};
     int size = sizeof(arr) / sizeof(arr[0]);
 
-    printf("%d\n", findSecondMax(arr, size));
+    printf("%d\n", find_second_max(arr, size));
+
     return 0;
 }

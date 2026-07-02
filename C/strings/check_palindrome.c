@@ -11,7 +11,7 @@ int ft_strlen(char *str) {
     return i;
 }
 
-bool checkPalindrome(char *str) {
+bool check_palindrome(char *str) {
     int start = 0;
     int end = ft_strlen(str) - 1;
 
@@ -29,6 +29,6 @@ bool checkPalindrome(char *str) {
 int main() {
     char str[] = "";
 
-    printf("%s\n", checkPalindrome(str) ? "true" : "false");
+    printf("%s\n", check_palindrome(str) ? "true" : "false");
     return 0;
 }

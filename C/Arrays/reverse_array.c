@@ -1,9 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int *reverseArray(int *arr, int size) {
+int *reverse_array(int *arr, int size) {
     int j = 0;
-    int *newArray = (int *)malloc(sizeof(int) * size);
+
+    int *newArray = malloc(sizeof(int) * size);
+
     if (!newArray) {
         return NULL;
     }
@@ -20,7 +22,7 @@ int main() {
     int arr[] = {1, 2, 3, 4};
     int size = 4;
 
-    int *result = reverseArray(arr, size);
+    int *result = reverse_array(arr, size);
 
     for (int i = 0; i < size; i++) {
         printf("%d ", result[i]);
