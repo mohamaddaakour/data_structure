@@ -1,0 +1,1 @@
+- Recursion is a technique used to solve computer problems by creating a function that calls itself until your program achieves the desired result.

@@ -48,3 +48,15 @@ print(f"Your age is {age}")
 # just two numbers only after the . we use this way
 print(f"Area: {area:.2f}")
 ```
+
+```python
+# in python we can't use pre-increment or post-increment like count++
+# we use this way instead
+count += 1
+```
+
+```python
+# in python like this we divide and take the integer number only
+
+print(5 // 2) # 2
+```
