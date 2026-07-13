@@ -1,6 +1,6 @@
-a = 2
-b = 3
+a, b = 1, 2
 
-a, b = b, a
+# this is called tuple unpacking
+a, b = b , a
 
 print(a, b)

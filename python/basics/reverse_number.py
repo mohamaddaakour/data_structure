@@ -1,12 +1,15 @@
-def reverse_number(num: int) -> int:
-    result: int = 0
-    if num < 0:
+def reverse_number(n: int) -> int:
+    if n < 0:
         return 0
     
-    while num > 0:
-        result = result * 10 + (num % 10)
-        num //= 10
-    
+    result: int = 0
+
+    while n > 0:
+        result = (n % 10) + result * 10
+
+        # in python like this we divide and take the integer number only
+        n //= 10
+
     return result
 
-print(reverse_number(12))
+print(reverse_number(122))
