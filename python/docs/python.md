@@ -66,3 +66,9 @@ print(5 // 2) # 2
 # to sort with 3 different criterias we use this way
 sorted_list = sorted(arr, key=lambda word: (count_vowels(word), len(word), word))
 ```
+
+```python
+# like this we put after each printed value space instead
+# of \n
+print(node.value, end=" ")
+```

@@ -7,7 +7,7 @@ class Node:
 
 def find_max(node: Node | None) -> int:
     if node is None:
-        return float("-inf")
+        return 0
 
     left_max = find_max(node.left)
     right_max = find_max(node.right)
@@ -17,9 +17,10 @@ def find_max(node: Node | None) -> int:
 root = Node(10)
 root.left = Node(5)
 root.right = Node(20)
-root.left.left = Node(3)
-root.left.right = Node(8)
-root.right.left = Node(15)
-root.right.right = Node(30)
+
+# root.left.left = Node(3)
+# root.left.right = Node(8)
+# root.right.left = Node(15)
+# root.right.right = Node(30)
 
 print(find_max(root))
