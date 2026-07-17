@@ -72,3 +72,14 @@ sorted_list = sorted(arr, key=lambda word: (count_vowels(word), len(word), word)
 # of \n
 print(node.value, end=" ")
 ```
+
+```python
+# get the habit to write the return like that not
+# puting if else
+return len(new_set) != len(nums)
+```
+
+```python
+# to reverse a string
+rev_new_str: str = new_str[::-1]
+```
