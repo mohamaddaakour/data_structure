@@ -15,9 +15,6 @@ class Solution:
 
         rev_new_str: str = new_str[::-1].lower()
 
-        print(new_str)
-        print(rev_new_str)
-
         return new_str == rev_new_str
 
 
